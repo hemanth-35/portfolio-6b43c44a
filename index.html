@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANDOJI DHEERAJ - Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                fontFamily: {
+                    sans: ['Lato', 'sans-serif'],
+                    serif: ['Playfair Display', 'serif'],
+                },
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            800: '#243b53',
+                            900: '#102a43',
+                        },
+                        gold: {
+                            400: '#d69e2e',
+                            500: '#b7791f',
+                            600: '#975a16',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .timeline-marker {
+            box-shadow: 0 0 0 4px #fff;
+        }
+        .dark .timeline-marker {
+            box-shadow: 0 0 0 4px #0f172a;
+        }
+        /* Mobile responsiveness fixes */
+        a[href^="mailto:"], a[href^="tel:"] {
+            word-break: break-all;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            display: inline-block;
+        }
+        .contact-section *, .about-section *, .languages-section *, .interests-section * {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        @media (max-width: 768px) {
+            .text-2xl { font-size: 1.25rem !important; }
+            .text-3xl { font-size: 1.5rem !important; }
+            .text-4xl { font-size: 1.75rem !important; }
+            .text-5xl { font-size: 2rem !important; }
+            .text-6xl { font-size: 2.25rem !important; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 transition-colors duration-300">
+
+    <!-- Mobile Header & Nav -->
+    <div class="md:hidden fixed w-full z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-gray-200 dark:border-slate-800">
+        <div class="flex justify-between items-center px-6 py-4">
+            <div>
+                <h1 class="font-serif text-xl font-bold text-navy-900 dark:text-white">KANDOJI DHEERAJ</h1>
+                
+            </div>
+            <button id="mobile-menu-btn" class="p-2 text-slate-600 dark:text-slate-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden bg-white dark:bg-slate-900 border-b border-t dark:border-slate-800">
+            <nav class="flex flex-col p-4 space-y-3">
+                <a href="#about" class="px-4 py-2 hover:bg-gray-50 dark:hover:bg-slate-800 rounded-lg">About</a>
+                
+                <a href="#achievements" class="px-4 py-2 hover:bg-gray-50 dark:hover:bg-slate-800 rounded-lg">Achievements</a>
+                <a href="#expertise" class="px-4 py-2 hover:bg-gray-50 dark:hover:bg-slate-800 rounded-lg">Expertise</a>
+                <a href="#certifications" class="px-4 py-2 hover:bg-gray-50 dark:hover:bg-slate-800 rounded-lg">Certifications</a>
+                
+                
+                <a href="#contact" class="px-4 py-2 hover:bg-gray-50 dark:hover:bg-slate-800 rounded-lg">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Desktop Sidebar -->
+    <aside class="hidden md:flex fixed top-0 left-0 w-72 h-screen flex-col bg-navy-900 text-white z-40 overflow-y-auto">
+        <div class="p-8 flex flex-col items-center text-center border-b border-navy-800 bg-navy-950/50">
+            <div class="w-24 h-24 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-3xl font-serif font-bold text-white mb-6 shadow-xl">
+                K
+            </div>
+            <h2 class="font-serif text-2xl font-bold mb-2">KANDOJI DHEERAJ</h2>
+            
+            
+            <div class="flex gap-4 mt-6 flex-wrap justify-center">
+                
+                <a href="https://linkedin.com/in/kandoji-dheeraj-7b070633b" target="_blank" rel="noopener noreferrer" class="p-2 bg-white/10 rounded-full hover:bg-gold-500 transition-colors" aria-label="LinkedIn" title="LinkedIn">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="https://github.com/Dheerax" target="_blank" rel="noopener noreferrer" class="p-2 bg-white/10 rounded-full hover:bg-gold-500 transition-colors" aria-label="Website" title="Website">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9\"/></svg>
+                </a>
+                
+                
+                <a href="mailto:dheerajkandoji@gmail.com" class="p-2 bg-white/10 rounded-full hover:bg-gold-500 transition-colors" aria-label="Email" title="Email">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                </a>
+                
+            </div>
+        </div>
+
+        <nav class="flex-1 py-8 px-6 space-y-2">
+            <a href="#about" class="block px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all flex items-center gap-3 group">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Professional Summary
+            </a>
+            
+            
+            <a href="#achievements" class="block px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all flex items-center gap-3 group">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Projects & Achievements
+            </a>
+            
+            
+            <a href="#expertise" class="block px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all flex items-center gap-3 group">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Skills & Expertise
+            </a>
+            
+            
+            <a href="#certifications" class="block px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all flex items-center gap-3 group">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Certifications
+            </a>
+            
+            
+            
+            <a href="#contact" class="block px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all flex items-center gap-3 group">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Contact
+            </a>
+        </nav>
+
+        <div class="p-6 border-t border-navy-800">
+            <button id="theme-toggle-desktop" class="w-full py-3 px-4 rounded-lg bg-navy-800 hover:bg-navy-700 text-xs font-bold uppercase tracking-wider text-slate-300 transition-colors flex items-center justify-center gap-2">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+                Toggle Theme
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="md:ml-72 min-h-screen">
+        
+        <!-- About / Summary Section -->
+        <section id="about" class="pt-24 pb-16 px-6 md:px-16 md:pt-32 max-w-5xl">
+            <div data-aos="fade-up">
+                <h6 class="text-gold-600 dark:text-gold-400 font-bold tracking-widest uppercase text-sm mb-4">Professional Profile</h6>
+                <h1 class="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-navy-900 dark:text-white mb-6 md:mb-8 leading-tight">
+                    
+                    Creative Professional
+                    
+                </h1>
+                <div class="prose prose-base md:prose-lg dark:prose-invert text-slate-600 dark:text-slate-300 max-w-none">
+                    <p class="leading-relaxed text-sm md:text-base">I'm a full-stack developer focused on building impactful applications, from creating a civic issue reporting platform used in my community to developing an AI-powered smart farming app. I enjoy leveraging technologies like React, Node.js, and Python to solve real-world problems and create efficient, data-driven solutions.</p>
+                </div>
+                
+                
+                <div class="flex items-center gap-2 mt-8 text-slate-500 dark:text-slate-400 font-medium">
+                    <svg class="w-5 h-5 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    <span>Based in Nagaram, Hyderabad, Telangana</span>
+                </div>
+                
+            </div>
+        </section>
+
+        <hr class="border-gray-200 dark:border-slate-800 mx-6 md:mx-16" />
+
+        <!-- Experience Section -->
+        
+
+        <!-- Projects & Achievements Grid -->
+        
+        <section id="achievements" class="py-16 px-6 md:px-16">
+            <h2 class="font-serif text-3xl md:text-4xl text-navy-900 dark:text-white mb-12" data-aos="fade-up">Projects & Key Achievements</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white dark:bg-slate-800 p-8 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-6 text-gold-600 dark:text-gold-400">
+                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 dark:text-white mb-3 group-hover:text-gold-600 transition-colors">
+                        GramRoute– Civic Issue Reporting Platform
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                        Launched a full-stack platform that streamlined civic issue reporting, empowering residents to easily report problems like road damage and streetlight failures. By independently developing and deploying the entire system, I created a more responsive government and improved quality of life within the community.
+                    </p>
+                    
+                    
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100 dark:border-slate-700">
+                        
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            React
+                        </span>
+                        
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            Node.js
+                        </span>
+                        
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            PostgreSQL
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="bg-white dark:bg-slate-800 p-8 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mb-6 text-gold-600 dark:text-gold-400">
+                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 dark:text-white mb-3 group-hover:text-gold-600 transition-colors">
+                        AgroSense– Smart Farming Automation App
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                        Revolutionized farming with a mobile app that leverages AI and IoT to automate irrigation, resulting in optimized water usage and increased crop yields. The app provides farmers with real-time field monitoring and intelligent irrigation control, empowering them to make data-driven decisions for healthier, more productive farms.
+                    </p>
+                    
+                    
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100 dark:border-slate-700">
+                        
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            React Native
+                        </span>
+                        
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            Firebase
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="bg-white dark:bg-slate-800 p-8 border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mb-6 text-gold-600 dark:text-gold-400">
+                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 dark:text-white mb-3 group-hover:text-gold-600 transition-colors">
+                        Pok´ emon Showdown Reinforcement Learning Bot
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                        Engineered high-performing Deep Q-Network (DQN) and Proximal Policy Optimization (PPO) agents in Python, enabling them to decisively outperform random opponents. Developed a complete RL pipeline, including custom reward shaping and environment simulation, resulting in robust and efficient learning.
+                    </p>
+                    
+                    
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-100 dark:border-slate-700">
+                        
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            Python
+                        </span>
+                        
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            DQN
+                        </span>
+                        
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                            PPO
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+        <hr class="border-gray-200 dark:border-slate-800 mx-6 md:mx-16" />
+        
+
+        <!-- Expertise & Skills -->
+        
+        <section id="expertise" class="py-16 px-6 md:px-16 max-w-6xl">
+            <h2 class="font-serif text-3xl md:text-4xl text-navy-900 dark:text-white mb-12" data-aos="fade-up">Skills & Expertise</h2>
+            
+            
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up">
+                    
+                    <div class="group flex items-center p-4 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm hover:shadow-md hover:border-gold-500/30 transition-all duration-300">
+                        <div class="w-2 h-2 rounded-full bg-gold-500 mr-4 group-hover:scale-125 transition-transform"></div>
+                        <span class="text-slate-700 dark:text-slate-200 font-medium tracking-wide">technical</span>
+                    </div>
+                    
+                    <div class="group flex items-center p-4 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm hover:shadow-md hover:border-gold-500/30 transition-all duration-300">
+                        <div class="w-2 h-2 rounded-full bg-gold-500 mr-4 group-hover:scale-125 transition-transform"></div>
+                        <span class="text-slate-700 dark:text-slate-200 font-medium tracking-wide">soft</span>
+                    </div>
+                    
+                </div>
+            
+        </section>
+        
+
+        <!-- Certifications Section -->
+        
+        <section id="certifications" class="py-16 px-6 md:px-16 max-w-6xl">
+            <h2 class="font-serif text-3xl md:text-4xl text-navy-900 dark:text-white mb-12" data-aos="fade-up">Certifications & Credentials</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white dark:bg-slate-800 p-6 border-l-4 border-gold-500 shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="50">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gold-100 dark:bg-navy-800 rounded-lg flex items-center justify-center text-gold-600 shrink-0">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold text-navy-900 dark:text-white mb-1">Infosys Data Structures Certificate</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 mb-2"></p>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <hr class="border-gray-200 dark:border-slate-800 mx-6 md:mx-16" />
+        
+
+        <!-- Publications Section -->
+        
+
+        <!-- Education -->
+        
+        <section class="py-16 px-6 md:px-16 bg-gray-50 dark:bg-slate-800/50">
+             <h2 class="font-serif text-3xl md:text-4xl text-navy-900 dark:text-white mb-12">Education & Credentials</h2>
+             <div class="grid md:grid-cols-2 gap-8">
+                 
+                 <div class="flex gap-4">
+                     <div class="w-12 h-12 flex-shrink-0 bg-white dark:bg-slate-800 rounded-lg shadow-sm flex items-center justify-center text-navy-800 dark:text-white font-serif font-bold text-xl border border-gray-100 dark:border-slate-700">
+                         U
+                     </div>
+                     <div>
+                         <h4 class="text-lg font-bold text-navy-900 dark:text-white">B.Tech</h4>
+                         <p class="text-slate-600 dark:text-slate-400">Anurag University</p>
+                         <p class="text-sm text-slate-500 mt-1">2024–2028-01 - 2034-01</p>
+                         
+                         <p class="text-sm font-semibold text-gold-600 dark:text-gold-400 mt-1">GPA: 9.1</p>
+                         
+                     </div>
+                 </div>
+                 
+             </div>
+        </section>
+        
+
+        <!-- Volunteering Section -->
+        
+
+        <!-- Awards Section -->
+        
+
+        <!-- Testimonials / References Section -->
+        
+
+        <!-- Quick Info: Languages & Interests -->
+        
+        <section class="py-12 md:py-16 px-6 md:px-16 bg-white dark:bg-slate-900 border-t border-gray-100 dark:border-slate-800">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 max-w-5xl">
+                
+                <div>
+                    <h3 class="font-serif text-xl md:text-2xl text-navy-900 dark:text-white mb-6">Languages</h3>
+                    <div class="space-y-3">
+                        
+                        <div class="flex justify-between items-center bg-gray-50 dark:bg-slate-800 px-4 py-3 rounded-lg">
+                            
+                            <span class="font-bold text-slate-700 dark:text-slate-200 text-sm md:text-base">Telugu</span>
+                            
+                            <span class="text-xs md:text-sm text-gold-600 dark:text-gold-400 capitalize">Native</span>
+                            
+                            
+                        </div>
+                        
+                        <div class="flex justify-between items-center bg-gray-50 dark:bg-slate-800 px-4 py-3 rounded-lg">
+                            
+                            <span class="font-bold text-slate-700 dark:text-slate-200 text-sm md:text-base">Hindi</span>
+                            
+                            <span class="text-xs md:text-sm text-gold-600 dark:text-gold-400 capitalize">Professional</span>
+                            
+                            
+                        </div>
+                        
+                        <div class="flex justify-between items-center bg-gray-50 dark:bg-slate-800 px-4 py-3 rounded-lg">
+                            
+                            <span class="font-bold text-slate-700 dark:text-slate-200 text-sm md:text-base">English</span>
+                            
+                            <span class="text-xs md:text-sm text-gold-600 dark:text-gold-400 capitalize">Professional</span>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div>
+                    <h3 class="font-serif text-xl md:text-2xl text-navy-900 dark:text-white mb-6">Interests</h3>
+                    <div class="flex flex-wrap gap-3">
+                        
+                        <span class="px-3 py-1.5 md:px-4 md:py-2 border border-slate-200 dark:border-slate-700 rounded-full text-xs md:text-sm text-slate-600 dark:text-slate-300">
+                            
+                            Full-Stack Development
+                            
+                        </span>
+                        
+                        <span class="px-3 py-1.5 md:px-4 md:py-2 border border-slate-200 dark:border-slate-700 rounded-full text-xs md:text-sm text-slate-600 dark:text-slate-300">
+                            
+                            AI-Powered Solutions
+                            
+                        </span>
+                        
+                        <span class="px-3 py-1.5 md:px-4 md:py-2 border border-slate-200 dark:border-slate-700 rounded-full text-xs md:text-sm text-slate-600 dark:text-slate-300">
+                            
+                            Community Problem Solving
+                            
+                        </span>
+                        
+                        <span class="px-3 py-1.5 md:px-4 md:py-2 border border-slate-200 dark:border-slate-700 rounded-full text-xs md:text-sm text-slate-600 dark:text-slate-300">
+                            
+                            Data-Driven Agriculture
+                            
+                        </span>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+
+        <section id="contact" class="py-20 px-6 md:px-16 bg-navy-900 text-white mt-0 md:mt-12">
+            <div class="max-w-4xl">
+                <h2 class="font-serif text-4xl mb-8">Ready for the next strategic conversation?</h2>
+                <div class="flex flex-col md:flex-row gap-8 mb-12">
+                    
+                    <div class="max-w-full overflow-hidden">
+                        <div class="text-gold-500 text-sm uppercase tracking-wider mb-2">Email</div>
+                        <a href="mailto:dheerajkandoji@gmail.com" class="text-xl md:text-2xl font-serif font-bold hover:text-gold-400 transition-colors break-all">dheerajkandoji@gmail.com</a>
+                    </div>
+                    
+                    
+                    <div class="max-w-full overflow-hidden">
+                        <div class="text-gold-500 text-sm uppercase tracking-wider mb-2">Phone</div>
+                        <a href="tel:+91-7842340586" class="text-xl md:text-2xl font-serif font-bold hover:text-gold-400 transition-colors break-all">+91-7842340586</a>
+                    </div>
+                    
+                </div>
+                <div class="pt-8 border-t border-navy-800 flex flex-wrap justify-between items-center text-slate-400 text-sm gap-y-4">
+                    <p>&copy; KANDOJI DHEERAJ. All Rights Reserved.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://linkedin.com/in/kandoji-dheeraj-7b070633b" target="_blank" rel="noopener noreferrer" class="hover:text-white">LinkedIn</a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://github.com/Dheerax" target="_blank" rel="noopener noreferrer" class="hover:text-white">Website</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // Theme Toggle
+        const themeToggles = [document.getElementById('theme-toggle-desktop')];
+        const html = document.documentElement;
+
+        // Check local storage or system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+
+        themeToggles.forEach(btn => {
+            if(btn) {
+                btn.addEventListener('click', () => {
+                    html.classList.toggle('dark');
+                    localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+                });
+            }
+        });
+
+        // Mobile Menu
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if(mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
